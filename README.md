@@ -68,3 +68,6 @@ PUT: http://localhost:3000/api/v1/679faed7fb58d269a880c94d
 
 4. Delete Licence(Id based)
 Delete: http://localhost:3000/api/v1/679faed7fb58d269a880c94d
+
+# Docker Run Build
+To run docker use :- docker-compose up --build -d
