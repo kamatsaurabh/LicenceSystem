@@ -6,6 +6,7 @@ import express from "express";
 import { connectDB } from "./utils/features.js";
 import errorMiddleware from "./middleware/errorMiddleware.js";
 import userRoute from "./routes/userRoute.js";
+import licenceRoute from "./routes/licenceRoute.js";
 import cookieParser from "cookie-parser";
 
 const app = express();
@@ -15,6 +16,7 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 app.use("/api/v1", userRoute);
+app.use("/api/v1", licenceRoute);
 
 app.use(errorMiddleware);
 
